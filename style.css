@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #008080;
+    padding: 20px;
+    color: #fff;
+}
+header h1{
+    font-size: 38px;
+}
+
+
+/* --------Main------------- */
+
+main{
+    min-height: 80vh;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main form{
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="text"],button[type="submit"],.recipe div a{
+    /* border: none; */
+    font-size: 18px;
+    font-weight: 00;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form input[type="text"]{
+    flex-grow: 1;
+}
+form button[type="submit"]{
+    background-color: #008080;
+    color: #f5f5f5;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/* --------Footer---------- */
+footer{
+    background-color: #008080;
+    color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+}
+.recipe{
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.recipe p{
+    margin-top: 10px;
+}
+
+.recipe p[class="partOfSpeech"]{
+    font-style: italic;
+    color: #808080;
+    margin-top: 2px;
+}
+.recipe div {
+    margin-top: 20px;
+}
+.recipe div a {
+    text-decoration: none;
+    background-color: #008080;
+    color: #f5f5f5;
+}
+
+.recipe li{
+    padding: 3.3px;
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width:320px){
+    main form{
+        flex-direction: column;
+    }
+    form button[type="submit"]{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
